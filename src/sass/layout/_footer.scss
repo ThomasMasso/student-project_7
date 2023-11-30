@@ -1,0 +1,18 @@
+@import '../utils/variables';
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.75rem;
+    background-color: $footer-color;
+    height: 13.125rem;
+    color: $main-color;
+    padding: 4.125rem 29rem 1.875rem 29rem;
+    margin-top: 2.75rem;
+}
+
+

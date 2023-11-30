@@ -1,0 +1,29 @@
+@import '../utils/variables';
+
+.header {
+    display: flex;
+    height: 4.25rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 100px 63px 100px;
+}
+
+.header__navbar {
+    display: flex;
+    gap: 3.55rem;
+}
+
+.header__navbar a {
+    color: $secondary-color;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.red-underline {
+    text-decoration: underline $secondary-color;
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 0.05rem;
+}
+

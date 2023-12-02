@@ -1,16 +1,5 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import logo from '../../assets/logo-desktop.svg'
-
-function NavLinkUnderline({ path, className, name }) {
-    return (
-        <>
-            <Link
-                to={path}
-                className={className}
-            >{name}</Link>
-        </>
-    )
-}
 
 export default function Header() {
     return (
@@ -18,10 +7,18 @@ export default function Header() {
             <div className="header__logo">
                 <img src={logo} alt='logo Kasa' />
             </div>
-            <div className="header__navbar">
-                <NavLinkUnderline path='/' className='red-underline' name='Accueil' />
-                <NavLinkUnderline path='/about' className='no-underline' name='A Propos' />
-            </div>
+            <nav className="header__navbar">
+                <NavLink
+                    to='/'
+                    className={(nav) => (nav.isActive ? 'red-underline' : 'no-underline')} //https://www.geeksforgeeks.org/link-and-navlink-components-in-react-router-dom/
+                >Accueil
+                </NavLink>
+                <NavLink
+                    to='/about'
+                    className={(nav) => (nav.isActive ? 'red-underline' : 'no-underline')}
+                >A Propos
+                </NavLink>
+            </nav>
         </div>
     )
 }

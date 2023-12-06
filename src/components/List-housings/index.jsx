@@ -5,9 +5,9 @@ function Housing ({ title, cover }) {
     return (
         <>
             <Link to='/'>
-                <article>
-                    <img src={cover} alt={title} />
-                    <h3>{title}</h3>
+                <article className='housing'>
+                    <img src={cover} alt={title} className='housing__image' />
+                    <h3 className='housing__title'>{title}</h3>
                 </article>
             </Link>
         </>
@@ -17,7 +17,7 @@ function Housing ({ title, cover }) {
 export default function Cards() {
     return (
         <>
-        <main>
+        <main className='housings-container'>
             {housings.map(housing => 
                 <Housing
                     title={housing.title}

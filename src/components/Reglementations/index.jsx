@@ -1,3 +1,9 @@
+import { useState } from "react";
+import arrowDownSvg from '../../assets/arrow-down.svg';
+import arrowUpSvg from '../../assets/arrow-up.svg';
+
+
+// mettre hors composant - data
 const dataReglementations = [
     {
         title: 'Fiabilité',
@@ -18,23 +24,38 @@ const dataReglementations = [
 ];
 
 function CardReglementation({ title, content }) {
+
+    const [showMore, setShowMore] = useState(false);
+
+    function handleMoreClick() {
+        setShowMore(!showMore);
+    }
+
     return (
         <>
-            <article>
+            <article class='reglementation'>
                     <header>
                         <h4>{title}</h4>
-                        <div>{content}</div>
+                        {/* <div class="arrow-down" onClick={handleMoreClick}></div> */}
+                        {showMore ? (
+                            <img src={arrowUpSvg} alt='icon arrow dropdown element' onClick={handleMoreClick} />
+                        ) : (
+                            <img src={arrowDownSvg} alt='icon arrow dropdown element' onClick={handleMoreClick} />
+                        )}
                     </header>
-                    <p></p>
+                    {showMore && <p>{content}</p>} 
             </article>
         </>
     )
 }
 
 export default function Reglementations() {
+
+    
+
     return (
         <>
-            <main>
+            <main class='reglementations-container'>
                 {dataReglementations.map((data, index) => (
                     <CardReglementation
                         title={data.title}

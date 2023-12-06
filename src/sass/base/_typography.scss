@@ -8,25 +8,35 @@ html {
     font-style: normal;
     font-weight: $body-font-weight;
     font-size: $body-font-size;
-    line-height: $body-line-height;
     color: black;
 }
 
 h1 {
     font-size: $h1-font-size;
     color: $main-color;
+    line-height: $line-height;
+}
+
+.error__title {
+    font-size: 18rem;
+    color: $secondary-color;
+    font-weight: $error-font-weight;
+    line-height: $line-height;
 }
 
 h2 {
     font-size: $header-housing-font-size;
     color: $secondary-color;
+    line-height: $line-height;
 }
 
 h3 {
     color: $main-color;
+    line-height: $line-height;
 }
 
 h4 {
     font-size: $nav-about-footer-font-size;
     color: $main-color;
+    line-height: $line-height;
 }

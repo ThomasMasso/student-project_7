@@ -1,0 +1,15 @@
+@import '../../../sass/utils/variables';
+@import '../../atoms/ErrorTitle/errorTitle.scss';
+@import '../../atoms/LinkReturnHome/linkReturnHome.scss';
+
+.kasa-m-error__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $secondary-color;
+}
+
+.kasa-m-error__paragraph {
+    font-size: $header-housing-font-size;
+    margin-bottom: 11rem;
+}

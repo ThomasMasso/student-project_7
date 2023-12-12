@@ -1,0 +1,7 @@
+@import '../../../sass/utils/mixins';
+@import '../../../sass/utils/variables';
+
+.kasa-a-link__home {
+    @include underline;
+    color: $secondary-color;
+}

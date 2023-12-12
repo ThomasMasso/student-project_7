@@ -1,0 +1,39 @@
+@import '../../../sass/utils/variables';
+
+.kasa-m-collapse-card{
+    padding-bottom: 30px;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $secondary-color;
+        height: 47px;
+        padding: 0 10px;
+        border-radius: $border-radius-medium;
+    }
+
+    img {
+        padding-right: 20px;
+    }
+
+    h2 {
+        padding-left: 10px;
+        font-size: $nav-about-footer-font-size;
+        color: $main-color;
+        line-height: 142.6%;
+    }
+
+    p {
+        background-color: $container-dropdown-color;
+        border-radius: $border-radius-medium;
+        padding: 40px 25px 10px 20px;
+        position: relative;
+        top: -15px;
+        z-index: -1;
+        font-size: $nav-about-footer-font-size;
+        font-weight: $list-dropdown-font-weight;
+        color: $secondary-color;
+        line-height: $line-height;
+    }
+}

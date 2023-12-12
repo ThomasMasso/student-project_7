@@ -27,20 +27,20 @@ function CardReglementation({ title, content }) {
 
     const [showMore, setShowMore] = useState(false);
 
-    function handleMoreClick() {
-        setShowMore(!showMore);
-    }
+    // function handleMoreClick() {
+    //     setShowMore(!showMore);
+    // }
 
     return (
         <>
-            <article class='reglementation'>
+            <article className='reglementation'>
                     <header>
                         <h4>{title}</h4>
                         {/* <div class="arrow-down" onClick={handleMoreClick}></div> */}
                         {showMore ? (
-                            <img src={arrowUpSvg} alt='icon arrow dropdown element' onClick={handleMoreClick} />
+                            <img src={arrowUpSvg} alt='icon arrow dropdown element' onClick={() => setShowMore(!showMore)} />
                         ) : (
-                            <img src={arrowDownSvg} alt='icon arrow dropdown element' onClick={handleMoreClick} />
+                            <img src={arrowDownSvg} alt='icon arrow dropdown element' onClick={() => setShowMore(!showMore)} />
                         )}
                     </header>
                     {showMore && <p>{content}</p>} 
@@ -53,7 +53,7 @@ export default function Reglementations() {
 
     return (
         <>
-            <main class='reglementations-container'>
+            <main className='reglementations-container'>
                 {dataReglementations.map((data, index) => (
                     <CardReglementation
                         title={data.title}

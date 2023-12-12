@@ -6,8 +6,10 @@
 @import '../components/molecules/Banner/banner.scss';
 // @import '../sass/pages/home';
 @import '../components/organisms/Gallery/gallery.scss';
-@import '../sass/pages/about';
-@import '../sass/pages/error';
+// @import '../sass/pages/about';
+@import '../components/organisms/AboutCollapses/aboutCollapses.scss';
+// @import '../sass/pages/error';
+@import '../components/molecules/Error/error.scss';
 // @import '../sass/layout/footer';
 @import '../components/molecules/Footer/footer.scss';
 

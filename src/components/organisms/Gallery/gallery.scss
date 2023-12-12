@@ -1,0 +1,22 @@
+@import '../../../sass/utils/variables';
+@import '../../molecules/GalleryCard/galleryCard.scss';
+
+.kasa-o-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+    row-gap: 3.125rem;
+    margin: 0 100px;
+    padding: 3.125rem;
+    background-color: $container-dropdown-color;
+    border-radius: $border-radius-large;
+
+    a {
+        width: 340px;
+        height: 340px;
+        border-radius: $border-radius-medium;
+        background: $card-linear-color;
+        text-decoration: none;
+    }
+}
+

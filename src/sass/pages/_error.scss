@@ -10,4 +10,16 @@
 
 .error-container h1 {
     color: $secondary-color;
+    font-size: 18rem;
+    font-weight: $error-font-weight;
+}
+
+.error-container__paragraph {
+    font-size: $header-housing-font-size;
+    margin-bottom: 11rem;
+}
+
+.error-container__redirection {
+    @include underline;
+    color: $secondary-color;
 }

@@ -1,0 +1,16 @@
+// @import '../utils/variables';
+@import '../../../sass/utils/variables';
+@import '../../atoms/Navlink/navLink.scss';
+
+.kasa-m-header__navbar {
+    display: flex;
+    gap: 3.55rem;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.red-underline {
+    @include underline;
+}

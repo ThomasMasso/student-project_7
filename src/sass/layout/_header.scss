@@ -22,8 +22,6 @@
 }
 
 .red-underline {
-    text-decoration: underline $secondary-color;
-    text-underline-offset: 0.25rem;
-    text-decoration-thickness: 0.05rem;
+    @include underline;
 }
 

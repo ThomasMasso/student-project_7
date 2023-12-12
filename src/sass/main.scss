@@ -1,11 +1,15 @@
 @import '../sass/base/reset';
 @import '../sass/base/typography';
 
-@import '../sass/layout/header';
-@import '../sass/pages/home';
+// @import '../sass/layout/header';
+@import '../components/organisms/Header/header.scss';
+@import '../components/molecules/Banner/banner.scss';
+// @import '../sass/pages/home';
+@import '../components/organisms/Gallery/gallery.scss';
 @import '../sass/pages/about';
 @import '../sass/pages/error';
-@import '../sass/layout/footer';
+// @import '../sass/layout/footer';
+@import '../components/molecules/Footer/footer.scss';
 
 
 

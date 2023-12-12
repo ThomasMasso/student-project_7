@@ -1,6 +1,9 @@
-import Header from "../../components/Header"
-import Banner from '../../components/Banner'
-import Footer from '../../components/Footer'
+// import Header from "../../components/Header"
+// import Banner from '../../components/Banner'
+// import Footer from '../../components/Footer'
+import Header from '../../components/organisms/Header/index'
+import Banner from '../../components/molecules/Banner/index'
+import Footer from '../../components/molecules/Footer/index'
 import Reglementations from "../../components/Reglementations"
 
 export default function About() {

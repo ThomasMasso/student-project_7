@@ -1,6 +1,6 @@
 import { useState } from "react";
-import arrowDownSvg from '../../assets/arrow-down.svg';
-import arrowUpSvg from '../../assets/arrow-up.svg';
+import arrowDownSvg from '../../assets/arrow-down.svg'
+import arrowUpSvg from '../../assets/arrow-up.svg'
 
 
 // mettre hors composant - data
@@ -50,8 +50,6 @@ function CardReglementation({ title, content }) {
 }
 
 export default function Reglementations() {
-
-    
 
     return (
         <>

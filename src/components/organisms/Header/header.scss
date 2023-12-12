@@ -1,0 +1,9 @@
+@import '../../molecules/HeaderNavbar/navbar.scss';
+
+.kasa-o-header {
+    display: flex;
+    height: 4.25rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 100px 63px 100px;
+}

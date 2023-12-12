@@ -1,0 +1,17 @@
+@import '../../../sass/utils/mixins';
+@import '../../../sass/utils/variables';
+@import '../../atoms/HomeTitle/homeTitle.scss';
+
+.kasa-m-banner__home {
+    background: $rgba-darken-banner-color url('../../../assets/banner-background.png');
+    @include banner-background;
+    @include flex-center;
+    border-radius: $border-radius-large;
+}
+
+.kasa-m-banner__about {
+    background: $rgba-darken-banner-color url('../../../assets/banner-about.png');
+    @include banner-background;
+    @include flex-center;
+    border-radius: $border-radius-large;
+}

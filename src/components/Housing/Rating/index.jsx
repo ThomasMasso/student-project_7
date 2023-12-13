@@ -12,13 +12,13 @@ export default function Rating({ rating }) {
                     <img
                         key={note.toString()}
                         src={starActive}
-                        alt='étoiles colorées représentant une note sur 5'
+                        alt='étoiles colorées représentant une note'
                     />
                 ) : (
                     <img
                         key={note.toString()}
                         src={starInactive}
-                        alt='étoiles colorées représentant une note sur 5'
+                        alt='étoiles colorées représentant une note'
                     />
                 )
             }

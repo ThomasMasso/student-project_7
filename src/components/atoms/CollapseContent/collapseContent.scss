@@ -1,0 +1,14 @@
+@import '../../../sass/utils/variables';
+
+.kasa-a-collapse-content {
+    background-color: $container-dropdown-color;
+    border-radius: $border-radius-medium;
+    padding: 40px 25px 10px 20px;
+    position: relative;
+    top: -15px;
+    z-index: -1;
+    font-size: $nav-about-footer-font-size;
+    font-weight: $list-dropdown-font-weight;
+    color: $secondary-color;
+    line-height: $line-height;
+}

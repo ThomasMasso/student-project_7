@@ -1,7 +1,7 @@
 export default function CollapseContent({ content }) {
     return (
         <>
-            <p>{content}</p>
+            <div className="kasa-a-collapse-content">{content}</div>
         </>
     )
 }

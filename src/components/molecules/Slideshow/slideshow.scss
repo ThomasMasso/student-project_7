@@ -1,0 +1,70 @@
+@import '../../atoms/ArrowNext/arrowNext.scss';
+@import '../../atoms/ArrowPrev/arrowPrev.scss';
+@import '../../../sass/utils/mixins';
+
+.kasa-m-slideshow {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 415px;
+    overflow: hidden;
+}
+
+.kasa-m-slideshow__pic {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px; // a changer
+}
+
+.kasa-m-slideshow__pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+}
+
+.kasa-m-slideshow__pic-count {
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    color: #FFF;
+    left: 48%;
+    top: 86%;
+
+}
+
+.kasa-a-arrow-prev {
+    display: flex;
+    position: absolute;
+    top: 42%;
+    left: 2%;
+    width: 47px;
+    height: 79px;
+    z-index: 10;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 4.5rem;
+}
+
+.kasa-a-arrow-next {
+    display: flex;
+    position: absolute;
+    top: 42%;
+    right: 2%;
+    width: 47px;
+    height: 79px;
+    z-index: 10;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 4.5rem;
+}

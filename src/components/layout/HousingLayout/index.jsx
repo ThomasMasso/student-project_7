@@ -13,16 +13,16 @@ export default function HousingLayout() {
 
     return (
         <>
-            <main className="housing">
+            <main className="kasa-l-description">
                 <Slideshow
                     pictures={currentHousing.pictures}
                 />
-                <article className="housing__container">
-                    <section className="housing__informations">
+                <article className="kasa-l-description__container">
+                    <section className="kasa-l-description__informations">
                         <LocationInformations housing={currentHousing} />
                         <AuthorInformations housing={currentHousing} />
                     </section>
-                    <section className="housing__dropdowns">
+                    <section className="kasa-l-description__dropdowns">
                         <HousingCollapses housing={currentHousing} />
                     </section>
                 </article>

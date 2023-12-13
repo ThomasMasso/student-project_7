@@ -1,9 +1,14 @@
 @import '../../molecules/HeaderNavbar/navbar.scss';
+@import '../../atoms/HeaderLogo/headerLogo.scss';
 
 .kasa-o-header {
     display: flex;
     height: 4.25rem;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 100px 63px 100px;
+    margin: 40px 100px 0 100px;
+
+    @media screen and (max-width: 769px) {
+        margin: 20px 20px 0 20px;
+    }
 }

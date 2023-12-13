@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import housings from '../../../data/logements.json'
-import CardTitleImg from '../../molecules/CardTitleImg'
+import CardGallery from '../../molecules/CardGallery'
 
 export default function Gallery() {
     return (
@@ -11,7 +11,7 @@ export default function Gallery() {
                         to={`/housing/${housing.id}`}
                         key={housing.id}
                     >
-                            <CardTitleImg
+                            <CardGallery
                             title={housing.title}
                             cover={housing.cover}
                             />

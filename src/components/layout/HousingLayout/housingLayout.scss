@@ -1,0 +1,24 @@
+@import '../../molecules/Slideshow/slideshow.scss';
+@import '../../atoms/Tag/tag.scss';
+@import '../../molecules/LocationInformations/locationInformations.scss';
+@import '../../organisms/AuthorInformations/authorInformations.scss';
+
+.kasa-l-description {
+    margin: 1.25rem 6.25rem 0 6.25rem;
+    flex-direction: column;
+}
+
+.kasa-l-description__informations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 30px 0;
+}
+
+.kasa-l-description__dropdowns {
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+}
+

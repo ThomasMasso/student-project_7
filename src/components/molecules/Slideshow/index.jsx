@@ -19,7 +19,7 @@ export default function Slideshow({ pictures }) {
 
     return (
         <>
-            <section>
+            <section className="kasa-m-slideshow">
                 {/* création des fleches de défilement d'images si le logement compte + de 1 image */}
                 {pictures.length > 1 && (
                     // <ArrowPrev onClick={prevImage}/>
@@ -33,13 +33,14 @@ export default function Slideshow({ pictures }) {
                 {pictures.map((picture, index) => {
                     return (
                         <div
-                            key={index} 
+                            key={index}
+                            className="kasa-m-slideshow__pic"
                         >
                             {indexPicture === index && (
                                 <img src={picture} alt='image du logement' />
                             )}
                             {indexPicture === index && pictures.length > 1 && (
-                                <span>
+                                <span className="kasa-m-slideshow__pic-count">
                                     {index + 1}/{pictures.length}
                                 </span>
                             )}

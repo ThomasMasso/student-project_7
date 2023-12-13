@@ -7,6 +7,7 @@
     @include banner-background;
     @include flex-center;
     border-radius: $border-radius-large;
+    margin-top: 63px;
 }
 
 .kasa-m-banner__about {
@@ -14,4 +15,5 @@
     @include banner-background;
     @include flex-center;
     border-radius: $border-radius-large;
+    margin-top: 44px;
 }

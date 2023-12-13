@@ -1,17 +1,16 @@
 @import '../sass/base/reset';
 @import '../sass/base/typography';
 
-// @import '../sass/layout/header';
 @import '../components/organisms/Header/header.scss';
-@import '../components/molecules/Banner/banner.scss';
-// @import '../sass/pages/home';
-@import '../components/organisms/Gallery/gallery.scss';
-// @import '../sass/pages/about';
-@import '../components/organisms/AboutCollapses/aboutCollapses.scss';
-// @import '../sass/pages/error';
-@import '../components/molecules/Error/error.scss';
-// @import '../sass/layout/footer';
 @import '../components/molecules/Footer/footer.scss';
+
+@import '../components/molecules/Banner/banner.scss';
+
+@import '../components/organisms/Gallery/gallery.scss';
+@import '../components/organisms/AboutCollapses/aboutCollapses.scss';
+@import '../components/layout/HousingLayout/housingLayout.scss';
+@import '../components/molecules/Error/error.scss';
+
 
 
 

@@ -10,4 +10,15 @@
     color: $main-color;
     padding: 4.125rem 29rem 1.875rem 29rem;
     margin-top: 2.75rem;
+
+    @media screen and (max-width: 769px) {
+        padding: 62px 0px;
+        gap: -0.444px;
+    }
+
+    p {
+        @media screen and (max-width: 769px) {
+            font-size: 12px; 
+        }
+    }
 }

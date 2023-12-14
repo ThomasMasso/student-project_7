@@ -10,12 +10,27 @@
     background-color: $container-dropdown-color;
     border-radius: $border-radius-large;
 
+    @media screen and (max-width: 769px) {
+        column-gap: 0;
+        row-gap: 0;
+        padding: 0;
+        background-color: #FFF;
+        width: 90%;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
     a {
         width: 340px;
         height: 340px;
         border-radius: $border-radius-medium;
         background: $card-linear-color;
         text-decoration: none;
+
+        @media screen and (max-width: 769px) {
+            width: 335px;
+            height: 255px;
+        }
 
         .kasa-m-cardGallery {
         height: 100%;
@@ -38,6 +53,11 @@
             color: $main-color;
             line-height: 142.6%;
             padding: 0 1.25rem 1rem;
+
+            @media screen and (max-width: 769px) {
+                font-size: 18px;
+                padding: 5px 0 5px 15px;
+            }
         }
     }
 

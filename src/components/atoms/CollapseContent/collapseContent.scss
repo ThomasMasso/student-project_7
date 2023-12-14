@@ -11,4 +11,9 @@
     font-weight: $list-dropdown-font-weight;
     color: $secondary-color;
     line-height: $line-height;
+
+    @media screen and (max-width: 769px) {
+        font-size: 12px;
+        font-weight: 400;
+    }
 }

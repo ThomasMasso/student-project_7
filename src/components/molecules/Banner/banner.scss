@@ -8,6 +8,13 @@
     @include flex-center;
     border-radius: $border-radius-large;
     margin-top: 63px;
+
+    @media screen and (max-width: 769px) {
+        width: 90%;
+        height: 111px;
+        margin: 17px auto 22px auto;
+        border-radius: 10px;
+    }
 }
 
 .kasa-m-banner__about {
@@ -16,4 +23,11 @@
     @include flex-center;
     border-radius: $border-radius-large;
     margin-top: 44px;
+
+    @media screen and (max-width: 769px) {
+        width: 90%;
+        height: 223px;
+        margin: 0 auto 25px auto;
+        border-radius: 10px;
+    }
 }

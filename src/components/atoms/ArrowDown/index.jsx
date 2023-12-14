@@ -1,4 +1,4 @@
-import ArrowDownSvg from '../../../assets/arrow-down.svg'
+import ArrowDownSvg from '../../../assets/arrow-down.png'
 
 export default function ArrowDown({ onShow }) {
     return (

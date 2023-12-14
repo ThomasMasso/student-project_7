@@ -6,15 +6,27 @@
     font-size: 36px;
     color: #FF6060;
     line-height: 142.6%;
+
+    @media screen and (max-width: 769px) {
+        font-size: 18px;
+    }
 }
 
 .kasa-m-location p {
     font-size: 18px;
     color: #FF6060;
     line-height: 142.6%;
+
+    @media screen and (max-width: 769px) {
+        font-size: 14px;
+    }
 }
 
 .kasa-m-location__container {
     display: flex;
     padding-top: 20px;
+
+    @media screen and (max-width: 769px) {
+        padding-top: 10px;
+    }
 }

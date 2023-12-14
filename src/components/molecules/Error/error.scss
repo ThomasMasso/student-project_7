@@ -8,9 +8,23 @@
     align-items: center;
     color: $secondary-color;
     margin-top: 40px;
+
+    @media screen and (max-width: 769px) {
+        justify-content: center;
+        height: 80vh;
+        margin: 150px 56px 0 56px;
+    }
 }
 
 .kasa-m-error__paragraph {
     font-size: $header-housing-font-size;
     margin-bottom: 11rem;
+    text-align: center;
+
+    @media screen and (max-width: 769px) {
+        font-size: 18px;
+        margin: 0;
+    }
 }
+
+

@@ -13,6 +13,11 @@
         width: 64px;
         height: 64px;
         object-fit: cover;
+
+        @media screen and (max-width: 769px) {
+            width: 32px;
+            height: 32px;
+        }
     }
 
     h3 {
@@ -20,5 +25,20 @@
         text-align: right;
         width: 93px;
         color: #FF6060;
+
+        @media screen and (max-width: 769px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.kasa-o-author-informations {
+    @media screen and (max-width: 769px) {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
     }
 }

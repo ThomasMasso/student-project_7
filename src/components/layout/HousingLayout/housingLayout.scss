@@ -6,6 +6,11 @@
 .kasa-l-description {
     margin: 1.25rem 6.25rem 0 6.25rem;
     flex-direction: column;
+
+    @media screen and (max-width: 769px) {
+        margin: 27px auto 0 auto;
+        width: 90%;
+    }
 }
 
 .kasa-l-description__informations {
@@ -14,11 +19,21 @@
     justify-content: space-between;
     align-items: center;
     margin: 20px 0 30px 0;
+
+    @media screen and (max-width: 769px) {
+        flex-direction: column;
+        align-items: start;
+    }
 }
 
 .kasa-l-description__dropdowns {
     display: flex;
     justify-content: space-between;
     gap: 76px;
+
+    @media screen and (max-width: 769px) {
+        gap: 0;
+        flex-direction: column;
+    }
 }
 

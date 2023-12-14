@@ -1,4 +1,9 @@
 .star {
     width: 30px;
     height: 30px;
+
+    @media screen and (max-width: 769px) {
+        width: 18px;
+        height: 18px;
+    }
 }

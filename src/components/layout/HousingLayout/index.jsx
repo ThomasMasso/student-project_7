@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import housings from '../../../data/logements.json';
 import Slideshow from '../../../components/molecules/Slideshow';
 import LocationInformations from '../../../components/molecules/LocationInformations';
@@ -13,20 +13,24 @@ export default function HousingLayout() {
 
     return (
         <>
-            <main className="kasa-l-description">
-                <Slideshow
-                    pictures={currentHousing.pictures}
-                />
-                <article className="kasa-l-description__container">
-                    <section className="kasa-l-description__informations">
-                        <LocationInformations housing={currentHousing} />
-                        <AuthorInformations housing={currentHousing} />
-                    </section>
-                    <section className="kasa-l-description__dropdowns">
-                        <HousingCollapses housing={currentHousing} />
-                    </section>
-                </article>
-            </main>
+            {currentHousing ? (
+                <main className="kasa-l-description">
+                    <Slideshow
+                        pictures={currentHousing.pictures}
+                    />
+                    <article className="kasa-l-description__container">
+                        <section className="kasa-l-description__informations">
+                            <LocationInformations housing={currentHousing} />
+                            <AuthorInformations housing={currentHousing} />
+                        </section>
+                        <section className="kasa-l-description__dropdowns">
+                            <HousingCollapses housing={currentHousing} />
+                        </section>
+                    </article>
+                </main>
+            ) : (
+                <Navigate replace to="/404" />
+            )}
         </>
     )
 }

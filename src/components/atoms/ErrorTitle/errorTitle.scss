@@ -4,4 +4,8 @@
     color: $secondary-color;
     font-size: 18rem;
     font-weight: $error-font-weight;
+
+    @media screen and (max-width: 769px) {
+        font-size: 96px;
+    }
 }

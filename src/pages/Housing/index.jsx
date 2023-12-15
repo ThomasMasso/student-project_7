@@ -1,6 +1,6 @@
+import Header from '../../components/layout/Header/index'
+import Footer from '../../components/layout/Footer/index'
 import HousingLayout from "../../components/layout/HousingLayout";
-import Header from "../../components/organisms/Header";
-import Footer from "../../components/molecules/Footer";
 
 
 export default function Housing() {

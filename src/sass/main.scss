@@ -1,8 +1,11 @@
+@import '../sass/utils/mixins';
+@import '../sass/utils/variables';
+
 @import '../sass/base/reset';
 @import '../sass/base/typography';
 
-@import '../components/organisms/Header/header.scss';
-@import '../components/molecules/Footer/footer.scss';
+@import '../components/layout/Header/header.scss';
+@import '../components/layout/Footer/footer.scss';
 
 @import '../components/molecules/Banner/banner.scss';
 

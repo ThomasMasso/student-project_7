@@ -1,6 +1,6 @@
 import LogoFooter from '../../../assets/logo-footer.svg'
-import FooterLogo from '../../atoms/FooterLogo'
-import FooterCopyrightText from '../../atoms/FooterCopyrightText'
+import FooterLogo from '../../atoms/FooterLogo/index'
+import FooterCopyrightText from '../../atoms/FooterCopyrightText/index'
 
 export default function Footer() {
     return (

@@ -3,7 +3,8 @@
 .kasa-o-about-collapse-container {
     display: flex;
     flex-direction: column;
-    margin: 0 210px;
+    margin: 0 auto;
+    width: 70%;
 
     @media screen and (max-width: 769px) {
         margin: 0 auto;

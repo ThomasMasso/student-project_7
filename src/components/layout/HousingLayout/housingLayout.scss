@@ -5,10 +5,11 @@
 
 .kasa-l-description {
     margin: 1.25rem 6.25rem 0 6.25rem;
+    display: flex;
     flex-direction: column;
 
     @media screen and (max-width: 769px) {
-        margin: 27px auto 0 auto;
+        margin: 5% auto 0 auto;
         width: 90%;
     }
 }

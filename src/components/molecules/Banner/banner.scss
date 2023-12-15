@@ -7,12 +7,13 @@
     @include banner-background;
     @include flex-center;
     border-radius: $border-radius-large;
-    margin-top: 63px;
+    margin-top: 5%;
+    min-height: 111px;
+    height: 16vw;
 
     @media screen and (max-width: 769px) {
         width: 90%;
-        height: 111px;
-        margin: 17px auto 22px auto;
+        margin: 0 auto 3%;
         border-radius: 10px;
     }
 }
@@ -23,10 +24,9 @@
     @include flex-center;
     border-radius: $border-radius-large;
     margin-top: 44px;
+    height: 223px;
 
     @media screen and (max-width: 769px) {
-        width: 90%;
-        height: 223px;
         margin: 0 auto 25px auto;
         border-radius: 10px;
     }

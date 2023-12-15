@@ -2,22 +2,24 @@
 
 .kasa-o-gallery {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     column-gap: 0.5rem;
-    row-gap: 3.125rem;
-    margin: 0 100px;
-    padding: 3.125rem;
+    row-gap: 50px;
+    margin: 0 auto;
+    padding: 50px;
+    width: 90%;
     background-color: $container-dropdown-color;
     border-radius: $border-radius-large;
 
+    @media screen and (max-width: 1000px) {
+        row-gap: 20px;
+    }
+    
+
     @media screen and (max-width: 769px) {
-        column-gap: 0;
-        row-gap: 0;
         padding: 0;
         background-color: #FFF;
-        width: 90%;
-        margin: 0 auto;
-        gap: 20px;
     }
 
     a {
@@ -28,7 +30,7 @@
         text-decoration: none;
 
         @media screen and (max-width: 769px) {
-            width: 335px;
+            // width: 335px;
             height: 255px;
         }
 
@@ -42,8 +44,6 @@
         img {
             border-radius: $border-radius-medium;
             max-width: 100%;
-            max-height: 100%;
-            width: 100%;
             height: 75%;
             object-fit: cover;
         }

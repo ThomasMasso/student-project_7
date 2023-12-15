@@ -7,10 +7,12 @@
     gap: 3.55rem;
 
     @media screen and (max-width: 769px) {
-        gap: 0;
+        gap: 10px;
         width: 35%;
         justify-content: space-between;
         flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
 

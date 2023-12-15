@@ -23,8 +23,26 @@
         }
     }
 
-    img {
+    // img {
+    //     padding-right: 20px;
+
+    //     @media screen and (max-width: 769px) {
+    //         height: 20px;
+    //     }
+    // }
+
+    .kasa-a-arrow-up {
         padding-right: 20px;
+        cursor: pointer;
+
+        @media screen and (max-width: 769px) {
+            height: 10px;
+        }
+    }
+
+    .kasa-a-arrow-down {
+        padding-right: 20px;
+        cursor: pointer;
 
         @media screen and (max-width: 769px) {
             height: 20px;

@@ -22,7 +22,6 @@ export default function Slideshow({ pictures }) {
             <section className="kasa-m-slideshow">
                 {/* création des fleches de défilement d'images si le logement compte + de 1 image */}
                 {pictures.length > 1 && (
-                    // <ArrowPrev onClick={prevImage}/>
                     <ArrowPrev onClick={handlePrevClick} />
                 )}
                 {pictures.length > 1 && (

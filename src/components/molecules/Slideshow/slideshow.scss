@@ -12,8 +12,6 @@
     overflow: hidden;
 
     @media screen and (max-width: 769px) {
-        // width: 335px;
-        // height: 255px;
         align-self: center;
     }
 } 
@@ -26,7 +24,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    border-radius: 15px; // a changer
+    border-radius: 15px;
 }
 
 .kasa-m-slideshow__pic img {

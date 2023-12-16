@@ -1,10 +1,14 @@
-import { useState } from "react";
-import ArrowNext from '../../atoms/ArrowNext/index'
-import ArrowPrev from '../../atoms/ArrowPrev/index'
+import { useState } from "react"
+
+// import composants
+import ArrowIcon from "../../atoms/ArrowIcon"
+
+// import assets
+import ArrowNextIcon from '../../../assets/arrow-next.svg'
+import ArrowPrevIcon from '../../../assets/arrow-prev.svg'
 
 
-export default function Slideshow({ pictures }) {
-
+export default function Slideshow ({ pictures }) {
     const [indexPicture, setIndexPicture] = useState(0);
 
     // Si l'utilisateur se trouve à la première image et qu'il clique sur "Image précédente", la galerie affiche la dernière image.
@@ -22,10 +26,20 @@ export default function Slideshow({ pictures }) {
             <section className="kasa-m-slideshow">
                 {/* création des fleches de défilement d'images si le logement compte + de 1 image */}
                 {pictures.length > 1 && (
-                    <ArrowPrev onClick={handlePrevClick} />
+                    <ArrowIcon 
+                        onClick={handlePrevClick}
+                        src={ArrowPrevIcon}
+                        alt='chevron vers la gauche'
+                        className='kasa-a-arrow-prev' 
+                    />
                 )}
                 {pictures.length > 1 && (
-                     <ArrowNext onClick={handleNextClick} /> 
+                     <ArrowIcon 
+                        onClick={handleNextClick}
+                        src={ArrowNextIcon}
+                        alt='chevron vers la droite'
+                        className='kasa-a-arrow-next' 
+                    /> 
                 )}
 
                 {/* affichage des photos et du compteur de photos */}

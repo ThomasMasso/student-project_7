@@ -14,7 +14,7 @@ export default function Collapse({ title, content }) {
 
     return (
         <>
-            <article className="kasa-m-collapse-card">
+            <article className="collapse__card">
                 <header>
                     <CollapseTitle title={title} />
                     {showMore ? (
@@ -22,14 +22,14 @@ export default function Collapse({ title, content }) {
                             onClick={() => setShowMore(!showMore)}
                             src={ArrowUpIcon}
                             alt="chevron vers le haut"
-                            className="kasa-a-arrow-up"
+                            className="collapse__card-arrow-up"
                         />
                     ) : (
                         <ArrowIcon
                             onClick={() => setShowMore(!showMore)}
                             src={ArrowDownIcon}
                             alt="chevron vers le bas"
-                            className="kasa-a-arrow-down"
+                            className="collapse__card-arrow-down"
                         />
                     )}
                 </header>

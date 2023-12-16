@@ -2,31 +2,25 @@
 @import '../../../sass/utils/variables';
 @import '../../atoms/HomeTitle/homeTitle.scss';
 
-.kasa-m-banner__home {
+.banner-home {
     background: $rgba-darken-banner-color url('../../../assets/banner-background.png');
     @include banner-background;
     @include flex-center;
-    border-radius: $border-radius-large;
-    margin-top: 5%;
-    height: 223px;
-
+    
     @media screen and (max-width: 769px) {
-        width: 90%;
         margin: 5% auto 3% auto;
         border-radius: 10px;
         height: 111px;
     }
 }
 
-.kasa-m-banner__about {
+.banner-about {
     background: $rgba-darken-banner-color url('../../../assets/banner-about.png');
     @include banner-background;
-    @include flex-center;
-    border-radius: $border-radius-large;
-    margin-top: 5%;
-    height: 223px;
 
     @media screen and (max-width: 769px) {
         border-radius: 10px;
     }
 }
+
+

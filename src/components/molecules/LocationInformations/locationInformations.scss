@@ -1,8 +1,12 @@
-.kasa-m-location {
-    width: 70%;
+.housing__informations-location {
+    width: 75%;
+
+    @media screen and (max-width: 769px) {
+        width: 100%;
+    }
 }
 
-.kasa-m-location h3 {
+.housing__informations-location h3 {
     font-size: 36px;
     color: #FF6060;
 
@@ -11,20 +15,24 @@
     }
 }
 
-.kasa-m-location p {
+.housing__informations-location p {
     font-size: 18px;
     color: #FF6060;
 
     @media screen and (max-width: 769px) {
         font-size: 14px;
+        margin: 5px auto 10px auto;
     }
 }
 
-.kasa-m-location__container {
+.housing__informations-tags-container {
     display: flex;
     padding-top: 20px;
 
     @media screen and (max-width: 769px) {
         padding-top: 10px;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 10px;
     }
 }

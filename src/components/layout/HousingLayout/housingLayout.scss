@@ -3,14 +3,14 @@
 @import '../../molecules/LocationInformations/locationInformations.scss';
 @import '../../organisms/AuthorInformations/authorInformations.scss';
 
-.kasa-l-description {
+.housing {
     margin: 5% auto 0 auto;
     width: 90%;
     display: flex;
     flex-direction: column;
 }
 
-.kasa-l-description__informations {
+.housing__informations {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,7 +23,7 @@
     }
 }
 
-.kasa-l-description__dropdowns {
+.housing__dropdowns {
     display: flex;
     justify-content: space-between;
     gap: 76px;

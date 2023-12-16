@@ -1,7 +1,7 @@
 @import '../../../sass/utils/variables';
 @import '../../atoms/CollapseContent/collapseContent.scss';
 
-.kasa-m-collapse-card{
+.collapse__card {
     padding-bottom: 30px;
     width: 100%;
 
@@ -23,7 +23,7 @@
         }
     }
 
-    .kasa-a-arrow-up {
+    .collapse__card-arrow-up {
         padding-right: 20px;
         cursor: pointer;
 
@@ -32,7 +32,7 @@
         }
     }
 
-    .kasa-a-arrow-down {
+    .collapse__card-arrow-down {
         padding-right: 20px;
         cursor: pointer;
 
@@ -41,7 +41,7 @@
         }
     }
 
-    h2 {
+    .collapse__card-title {
         padding-left: 10px;
         font-size: $nav-about-footer-font-size;
         color: $main-color;

@@ -7,7 +7,7 @@ export default function Gallery() {
     return (
         <>
             <Banner isTitle={true} />
-            <main className="kasa-o-gallery">
+            <main className="home-gallery">
                 {housings.map((housing) => (
                     <Link to={`/housing/${housing.id}`} key={housing.id}>
                         <CardGallery

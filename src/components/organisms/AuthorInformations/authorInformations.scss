@@ -2,7 +2,7 @@
 @import '../../molecules/Rating/rating.scss';
 
 
-.kasa-m-cardAuthor {
+.author-card {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -12,7 +12,7 @@
         width: 15%;
     }
 
-    img {
+    .author-card__pic {
         border-radius: 50%;
         width: 64px;
         height: 64px;
@@ -24,7 +24,7 @@
         }
     }
 
-    h3 {
+    .author-card__title {
         margin-right: 10px;
         text-align: right;
         width: 93px;
@@ -36,7 +36,7 @@
     }
 }
 
-.kasa-o-author-informations {
+.housing__informations-author {
     @media screen and (max-width: 769px) {
         display: flex;
         flex-direction: row-reverse;

@@ -1,6 +1,6 @@
 @import '../../../sass/utils/variables';
 
-.kasa-o-gallery {
+.home-gallery {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -33,21 +33,21 @@
             height: 255px;
         }
 
-        .kasa-m-cardGallery {
+        .home-gallery__card {
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         }
 
-        img {
+        .home-gallery__card-picture {
             border-radius: $border-radius-medium;
             max-width: 100%;
             height: 75%;
             object-fit: cover;
         }
     
-        h3 {
+        .home-gallery__card-title {
             font-size: 18px;
             color: $main-color;
             padding: 0 6% 6% 6%;

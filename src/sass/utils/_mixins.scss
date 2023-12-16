@@ -1,11 +1,13 @@
+@import '../utils/variables';
+
 @mixin banner-background {
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
     margin: 5% auto;
+    border-radius: $border-radius-large;
+    height: 223px;
     width: 90%;
-    
-    
 }
 
 @mixin flex-center {

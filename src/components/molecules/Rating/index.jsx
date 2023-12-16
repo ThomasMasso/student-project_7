@@ -6,7 +6,7 @@ export default function Rating({ rating }) {
     const notes = [1, 2, 3, 4, 5]
 
     return (
-        <div className="kasa-m-rate__container">
+        <div className="rate__container">
             {notes.map((note) =>
                 rating >= note ? (
                     <Star

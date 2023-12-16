@@ -2,7 +2,7 @@
 @import '../../atoms/ErrorTitle/errorTitle.scss';
 @import '../../atoms/LinkReturnHome/linkReturnHome.scss';
 
-.kasa-m-error__container {
+.error-page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@
     }
 }
 
-.kasa-m-error__paragraph {
+.error-page__paragraph {
     font-size: 36px;
     margin-bottom: 24%;
     text-align: center;

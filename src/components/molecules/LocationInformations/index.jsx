@@ -2,10 +2,10 @@ import Tag from '../../atoms/Tag/index'
 
 export default function LocationInformations({ housing }) {
     return (
-        <div className="kasa-m-location">
+        <div className="housing__informations-location">
             <h3>{housing.title}</h3>
             <p>{housing.location}</p>
-            <div className="kasa-m-location__container">
+            <div className="housing__informations-tags-container">
                 {housing.tags.map((tags, index) => (
                     <Tag key={index} content={tags} />
                 ))}

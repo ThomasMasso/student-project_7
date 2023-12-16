@@ -1,6 +1,6 @@
 @import '../../../sass/utils/variables';
 
-.kasa-m-footer {
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,10 +10,10 @@
     height: 209px;
     color: $main-color;
     margin-top: 8%;
+}
 
-    p {
-        @media screen and (max-width: 769px) {
-            font-size: 12px; 
-        }
+.footer__content {
+    @media screen and (max-width: 769px) {
+        font-size: 12px; 
     }
 }

@@ -26,14 +26,14 @@ export default function Slideshow({ pictures }) {
 
     return (
         <>
-            <section className="kasa-m-slideshow">
+            <section className="slideshow">
                 {/* création des fleches de défilement d'images si le logement compte + de 1 image */}
                 {pictures.length > 1 && (
                     <ArrowIcon
                         onClick={handlePrevClick}
                         src={ArrowPrevIcon}
                         alt="chevron vers la gauche"
-                        className="kasa-a-arrow-prev"
+                        className="slideshow__arrow-prev"
                     />
                 )}
                 {pictures.length > 1 && (
@@ -41,19 +41,19 @@ export default function Slideshow({ pictures }) {
                         onClick={handleNextClick}
                         src={ArrowNextIcon}
                         alt="chevron vers la droite"
-                        className="kasa-a-arrow-next"
+                        className="slideshow__arrow-next"
                     />
                 )}
 
                 {/* affichage des photos et du compteur de photos */}
                 {pictures.map((picture, index) => {
                     return (
-                        <div key={index} className="kasa-m-slideshow__pic">
+                        <div key={index} className="slideshow__picture">
                             {indexPicture === index && (
                                 <img src={picture} alt="logement" />
                             )}
                             {indexPicture === index && pictures.length > 1 && (
-                                <span className="kasa-m-slideshow__pic-count">
+                                <span className="slideshow__count">
                                     {index + 1}/{pictures.length}
                                 </span>
                             )}

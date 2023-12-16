@@ -7,7 +7,7 @@ export default function AboutCollapses() {
         <>
             <Banner isTitle={false} />
 
-            <main className="kasa-o-about-collapse-container">
+            <main className="about-collapse">
                 {dataReglementations.map((data, id) => (
                     <Collapse
                         title={data.title}

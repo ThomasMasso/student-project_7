@@ -1,7 +1,7 @@
 export default function FooterCopyrightText({ children }) {
     return (
         <>
-            <p>{children}</p>
+            <p className="footer__content">{children}</p>
         </>
     )
 }

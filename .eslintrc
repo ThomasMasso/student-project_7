@@ -1,11 +1,6 @@
 {
-  "extends": ["react-app"],
-  "rules": {
-    "quotes": ["error", "single"]
-    // ,
-    // "semi": [
-    //     "error",
-    //     "never"
-    // ]
-  }
+    "extends": ["react-app"],
+    "rules": {
+        "quotes": ["error", "single"]
+    }
 }

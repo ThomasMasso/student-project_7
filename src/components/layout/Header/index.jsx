@@ -3,7 +3,7 @@ import HeaderLogo from '../../atoms/HeaderLogo'
 
 export default function Header() {
     return (
-        <div className="kasa-o-header">
+        <div className="header">
             <HeaderLogo />
             <Navbar />
         </div>

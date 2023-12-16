@@ -3,9 +3,9 @@ import LinkReturnHome from '../../atoms/LinkReturnHome'
 
 export default function Error() {
     return (
-        <div className="kasa-m-error__container">
+        <div className="error-page">
             <ErrorTitle>404</ErrorTitle>
-            <div className="kasa-m-error__paragraph">
+            <div className="error-page__paragraph">
                 <p>Oups! La page que vous demandez n'existe pas.</p>
             </div>
             <LinkReturnHome path="/">

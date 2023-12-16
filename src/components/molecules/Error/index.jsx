@@ -1,5 +1,5 @@
-import ErrorTitle from "../../atoms/ErrorTitle"
-import LinkReturnHome from "../../atoms/LinkReturnHome"
+import ErrorTitle from '../../atoms/ErrorTitle'
+import LinkReturnHome from '../../atoms/LinkReturnHome'
 
 export default function Error() {
     return (
@@ -8,9 +8,8 @@ export default function Error() {
             <div className="kasa-m-error__paragraph">
                 <p>Oups! La page que vous demandez n'existe pas.</p>
             </div>
-            <LinkReturnHome
-                path='/'
-            >Retourner sur la page d’accueil
+            <LinkReturnHome path="/">
+                Retourner sur la page d’accueil
             </LinkReturnHome>
         </div>
     )

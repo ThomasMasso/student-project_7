@@ -4,11 +4,8 @@ import FooterCopyrightText from '../../atoms/FooterCopyrightText/index'
 
 export default function Footer() {
     return (
-        <div className='kasa-m-footer'>
-            <FooterLogo
-                cover={LogoFooter}
-                title='logo kasa footer'
-            />
+        <div className="kasa-m-footer">
+            <FooterLogo cover={LogoFooter} title="logo kasa footer" />
             <FooterCopyrightText>
                 © 2020 Kasa. All rights reserved
             </FooterCopyrightText>

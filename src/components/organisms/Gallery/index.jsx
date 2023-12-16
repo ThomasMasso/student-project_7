@@ -8,18 +8,14 @@ export default function Gallery() {
         <>
             <Banner isTitle={true} />
             <main className="kasa-o-gallery">
-                {housings.map(housing =>
-                    <Link 
-                        to={`/housing/${housing.id}`}
-                        key={housing.id}
-                    >
-                            <CardGallery
+                {housings.map((housing) => (
+                    <Link to={`/housing/${housing.id}`} key={housing.id}>
+                        <CardGallery
                             title={housing.title}
                             cover={housing.cover}
-                            />
+                        />
                     </Link>
-                    
-                )}
+                ))}
             </main>
         </>
     )

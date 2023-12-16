@@ -1,5 +1,5 @@
-import CardAuthor from '../../molecules/CardAuthor/index';
-import Rating from '../../molecules/Rating/index';
+import CardAuthor from '../../molecules/CardAuthor/index'
+import Rating from '../../molecules/Rating/index'
 
 export default function AuthorInformations({ housing }) {
     return (
@@ -12,4 +12,3 @@ export default function AuthorInformations({ housing }) {
         </div>
     )
 }
-

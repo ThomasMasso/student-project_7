@@ -9,34 +9,32 @@ import CollapseContent from '../../atoms/CollapseContent/index'
 import ArrowDownIcon from '../../../assets/arrow-down.svg'
 import ArrowUpIcon from '../../../assets/arrow-up.svg'
 
-
-export default function Collapse ({ title, content }) {
-    const [showMore, setShowMore] = useState(false);
+export default function Collapse({ title, content }) {
+    const [showMore, setShowMore] = useState(false)
 
     return (
         <>
-            <article className='kasa-m-collapse-card'>
+            <article className="kasa-m-collapse-card">
                 <header>
                     <CollapseTitle title={title} />
                     {showMore ? (
-                        <ArrowIcon 
+                        <ArrowIcon
                             onClick={() => setShowMore(!showMore)}
                             src={ArrowUpIcon}
-                            alt='chevron vers le haut'
-                            className='kasa-a-arrow-up' 
+                            alt="chevron vers le haut"
+                            className="kasa-a-arrow-up"
                         />
                     ) : (
-                        <ArrowIcon 
+                        <ArrowIcon
                             onClick={() => setShowMore(!showMore)}
                             src={ArrowDownIcon}
-                            alt='chevron vers le bas'
-                            className='kasa-a-arrow-down' 
+                            alt="chevron vers le bas"
+                            className="kasa-a-arrow-down"
                         />
                     )}
                 </header>
                 {showMore && <CollapseContent content={content} />}
             </article>
         </>
-    );
+    )
 }
-

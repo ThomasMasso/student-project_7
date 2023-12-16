@@ -1,6 +1,6 @@
-import Collapse from "../../molecules/Collapse/index"
-import dataReglementations from "../../../data/reglementations.json"
-import Banner from "../../molecules/Banner"
+import Collapse from '../../molecules/Collapse/index'
+import dataReglementations from '../../../data/reglementations.json'
+import Banner from '../../molecules/Banner'
 
 export default function AboutCollapses() {
     return (

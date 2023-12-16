@@ -5,14 +5,20 @@ export default function Navbar() {
         <>
             <nav className="kasa-m-header__navbar">
                 <Navlink
-                    path='/'
-                    className={(nav) => (nav.isActive ? 'red-underline' : 'no-underline')}
-                >Accueil
+                    path="/"
+                    className={(nav) =>
+                        nav.isActive ? 'red-underline' : 'no-underline'
+                    }
+                >
+                    Accueil
                 </Navlink>
                 <Navlink
-                    path='/about'
-                    className={(nav) => (nav.isActive ? 'red-underline' : 'no-underline')}
-                >A Propos
+                    path="/about"
+                    className={(nav) =>
+                        nav.isActive ? 'red-underline' : 'no-underline'
+                    }
+                >
+                    A Propos
                 </Navlink>
             </nav>
         </>

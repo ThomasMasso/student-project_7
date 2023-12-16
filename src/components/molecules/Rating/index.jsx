@@ -1,29 +1,26 @@
-import starActive from '../../../assets/starActive.png';
-import starInactive from '../../../assets/starInactive.png';
+import starActive from '../../../assets/starActive.png'
+import starInactive from '../../../assets/starInactive.png'
 import Star from '../../atoms/Star/index'
 
 export default function Rating({ rating }) {
-
-    const notes = [1, 2, 3, 4, 5];
+    const notes = [1, 2, 3, 4, 5]
 
     return (
         <div className="kasa-m-rate__container">
-            {notes.map((note) => 
+            {notes.map((note) =>
                 rating >= note ? (
                     <Star
                         key={note.toString()}
                         cover={starActive}
-                        title='étoile'
-
+                        title="étoile"
                     />
                 ) : (
                     <Star
                         key={note.toString()}
                         cover={starInactive}
-                        title='étoile'
+                        title="étoile"
                     />
-                )
-            
+                ),
             )}
         </div>
     )

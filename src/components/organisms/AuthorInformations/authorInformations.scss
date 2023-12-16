@@ -7,6 +7,10 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    
+    @media screen and (max-width: 769px) {
+        width: 15%;
+    }
 
     img {
         border-radius: 50%;

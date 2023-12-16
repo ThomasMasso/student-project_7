@@ -2,10 +2,15 @@
 
 .kasa-a-error__title {
     color: $secondary-color;
-    font-size: 18rem;
+    font-size: 288px;
     font-weight: $error-font-weight;
+
+    @media screen and (max-width: 900px) {
+        font-size: 200px;
+    }
 
     @media screen and (max-width: 769px) {
         font-size: 96px;
     }
+
 }

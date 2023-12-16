@@ -50,7 +50,7 @@ export default function Slideshow({ pictures }) {
                     return (
                         <div key={index} className="kasa-m-slideshow__pic">
                             {indexPicture === index && (
-                                <img src={picture} alt="image du logement" />
+                                <img src={picture} alt="logement" />
                             )}
                             {indexPicture === index && pictures.length > 1 && (
                                 <span className="kasa-m-slideshow__pic-count">

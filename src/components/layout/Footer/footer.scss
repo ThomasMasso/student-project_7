@@ -5,11 +5,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.75rem;
+    gap: 10%;
     background-color: $footer-color;
-    height: 13.125rem;
+    height: 209px;
     color: $main-color;
-    margin-top: 2.75rem;
+    margin-top: 8%;
 
     p {
         @media screen and (max-width: 769px) {

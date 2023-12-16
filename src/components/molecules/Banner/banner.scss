@@ -8,13 +8,13 @@
     @include flex-center;
     border-radius: $border-radius-large;
     margin-top: 5%;
-    min-height: 111px;
-    height: 16vw;
+    height: 223px;
 
     @media screen and (max-width: 769px) {
         width: 90%;
-        margin: 0 auto 3%;
+        margin: 5% auto 3% auto;
         border-radius: 10px;
+        height: 111px;
     }
 }
 
@@ -23,11 +23,10 @@
     @include banner-background;
     @include flex-center;
     border-radius: $border-radius-large;
-    margin-top: 44px;
+    margin-top: 5%;
     height: 223px;
 
     @media screen and (max-width: 769px) {
-        margin: 0 auto 25px auto;
         border-radius: 10px;
     }
 }

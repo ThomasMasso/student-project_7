@@ -3,9 +3,13 @@
 
 .kasa-o-header {
     display: flex;
-    height: 4.25rem;
+    height: 68px;
     justify-content: space-between;
     align-items: center;
     width: 90%;
     margin: 3% auto 0 auto;
+
+    @media screen and (max-width: 769px) {
+        height: 47px; 
+    }
 }

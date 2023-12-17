@@ -1,5 +1,3 @@
-@import '../../../sass/utils/variables';
-
 .footer {
     display: flex;
     flex-direction: column;
@@ -8,8 +6,9 @@
     gap: 10%;
     background-color: $footer-color;
     height: 209px;
-    color: $main-color;
     margin-top: 8%;
+    @include font(24px, 500);
+    color: $secondary-color;
 }
 
 .footer__content {

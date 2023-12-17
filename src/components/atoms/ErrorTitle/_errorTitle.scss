@@ -1,9 +1,6 @@
-@import '../../../sass/utils/variables';
-
 .error-page__title {
-    color: $secondary-color;
-    font-size: 288px;
-    font-weight: $error-font-weight;
+    color: $primary-color;
+    @include font(288px, 700);
 
     @media screen and (max-width: 900px) {
         font-size: 200px;

@@ -1,5 +1,3 @@
-@import '../../../sass/utils/variables';
-
 .home-gallery {
     display: flex;
     justify-content: center;
@@ -9,7 +7,7 @@
     margin: 0 auto;
     padding: 50px;
     width: 90%;
-    background-color: $container-dropdown-color;
+    background-color: $container-color;
     border-radius: $border-radius-large;
 
     @media screen and (max-width: 1000px) {
@@ -19,7 +17,7 @@
 
     @media screen and (max-width: 769px) {
         padding: 0;
-        background-color: #FFF;
+        background-color: $secondary-color;
     }
 
     a {
@@ -38,26 +36,24 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        }
 
-        .home-gallery__card-picture {
-            border-radius: $border-radius-medium;
-            max-width: 100%;
-            height: 75%;
-            object-fit: cover;
-        }
-    
-        .home-gallery__card-title {
-            font-size: 18px;
-            color: $main-color;
-            padding: 0 6% 6% 6%;
+            .card__title {
+                @include font(18px, 500);
+                color: $secondary-color;
+                padding: 0 6% 6% 6%;
 
-            @media screen and (max-width: 769px) {
-                padding: 6% 0 6% 6%;
+                @media screen and (max-width: 769px) {
+                    padding: 0 5% 2% 5%;
+                }
             }
-        }
-    }
 
-    
+            .card__pic {
+                border-radius: $border-radius-medium;
+                max-width: 100%;
+                height: 75%;
+                object-fit: cover;
+            }
+        }   
+    }  
 }
 

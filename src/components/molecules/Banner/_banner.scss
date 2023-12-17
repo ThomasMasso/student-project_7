@@ -1,9 +1,7 @@
-@import '../../../sass/utils/mixins';
-@import '../../../sass/utils/variables';
 @import '../../atoms/HomeTitle/homeTitle.scss';
 
 .banner-home {
-    background: $rgba-darken-banner-color url('../../../assets/banner-background.png');
+    background: $darken-banner-color url('../../../assets/banner-background.png');
     @include banner-background;
     @include flex-center;
     
@@ -15,7 +13,7 @@
 }
 
 .banner-about {
-    background: $rgba-darken-banner-color url('../../../assets/banner-about.png');
+    background: $darken-banner-color url('../../../assets/banner-about.png');
     @include banner-background;
 
     @media screen and (max-width: 769px) {

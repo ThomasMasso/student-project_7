@@ -1,0 +1,72 @@
+@import '../../atoms/CollapseContent/collapseContent.scss';
+
+.about-collapse {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+
+    @media screen and (max-width: 769px) {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .collapse__card {
+        padding-bottom: 30px;
+        width: 100%;
+
+        @media screen and (max-width: 769px) {
+            padding-bottom: 20px;
+        }    
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $primary-color;
+            height: 47px;
+            padding: 0 10px;
+            border-radius: $border-radius-medium;
+
+            @media screen and (max-width: 769px) {
+                height: 30px;
+            }
+        }
+
+        .collapse__card-arrow-up {
+            padding-right: 20px;
+            cursor: pointer;
+
+            @media screen and (max-width: 769px) {
+                height: 8px;
+            }
+        }
+
+        .collapse__card-arrow-down {
+            padding-right: 20px;
+            cursor: pointer;
+
+            @media screen and (max-width: 769px) {
+                height: 8px;
+            }
+        }
+
+        .collapse__card-title {
+            padding-left: 10px;
+            @include font(24px, 500); 
+            color: $secondary-color;
+
+            @media screen and (max-width: 769px) {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .collapse__card-content {
+        @include font(24px, 400);
+
+        @media screen and (max-width: 769px) {
+            font-size: 12px;
+        }
+    }
+}

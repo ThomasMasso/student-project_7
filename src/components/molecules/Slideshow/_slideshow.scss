@@ -1,5 +1,3 @@
-@import '../../../sass/utils/mixins';
-
 .slideshow {
     display: flex;
     position: relative;
@@ -24,10 +22,10 @@
 .slideshow__count {
     display: block;
     position: absolute;
-    font-size: 18px;
-    color: #FFF;
     left: 48%;
     top: 86%;
+    @include font(18px, 500);
+    color: $secondary-color;
 
     @media screen and (max-width: 769px) {
         display: none;
@@ -40,8 +38,8 @@
     top: 42%;
     width: 47px;
     z-index: 10;
+    color: $secondary-color;
     cursor: pointer;
-    color: #FFF;
 
     @media screen and (max-width: 769px) {
         top: 48%;

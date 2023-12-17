@@ -1,7 +1,6 @@
 @import '../../atoms//Star/star.scss';
 @import '../../molecules/Rating/rating.scss';
 
-
 .author-card {
     display: flex;
     flex-direction: row-reverse;
@@ -12,7 +11,7 @@
         width: 15%;
     }
 
-    .author-card__pic {
+    .card__pic {
         border-radius: 50%;
         width: 64px;
         height: 64px;
@@ -24,11 +23,12 @@
         }
     }
 
-    .author-card__title {
+    .card__title {
         margin-right: 10px;
         text-align: right;
         width: 93px;
-        color: #FF6060;
+        @include font(18px, 500);
+        color: $primary-color;
 
         @media screen and (max-width: 769px) {
             font-size: 12px;

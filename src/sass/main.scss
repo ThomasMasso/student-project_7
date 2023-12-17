@@ -1,19 +1,11 @@
-@import '../sass/utils/mixins';
-@import '../sass/utils/variables';
-
 @import '../sass/base/reset';
 @import '../sass/base/typography';
-
+@import '../sass/utils/variables';
+@import '../sass/utils/mixins';
 @import '../components/layout/Header/header.scss';
 @import '../components/layout/Footer/footer.scss';
-
 @import '../components/molecules/Banner/banner.scss';
-
 @import '../components/organisms/Gallery/gallery.scss';
 @import '../components/organisms/AboutCollapses/aboutCollapses.scss';
 @import '../components/layout/HousingLayout/housingLayout.scss';
 @import '../components/molecules/Error/error.scss';
-
-
-
-

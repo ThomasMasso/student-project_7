@@ -1,8 +1,6 @@
-@import '../../../sass/utils/variables';
-
 .banner-home__title {
-    font-size: $h1-font-size;
-    color: $main-color;
+    @include font(48px, 500);
+    color: $secondary-color;
 
     @media screen and (max-width: 1000px) {
         font-size: 36px;

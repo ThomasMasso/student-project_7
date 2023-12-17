@@ -1,31 +1,12 @@
-
 // Colors
-$main-color: #FFF;
-$secondary-color: #FF6060;
-$container-dropdown-color: #F6F6F6;
-$host-color: #C4C4C4;
-$rating-color: #E3E3E3;
+$primary-color: #FF6060;
+$secondary-color: #FFF;
+$container-color: #F6F6F6;
 $footer-color: #000;
 $card-linear-color: linear-gradient(180deg, rgba(255,96,96,1) 0%, rgba(149,52,52,1) 100%);
-$rgba-darken-banner-color: rgba(0, 0, 0, 0.3);
+$darken-banner-color: rgba(0, 0, 0, 0.3);
 
 // Border Radius
 $border-radius-small: 5px;
 $border-radius-medium: 10px;
 $border-radius-large: 25px;
-
-// Font-size
-$body-font-size: 1.125rem;
-$h1-font-size: 3rem;
-$nav-about-footer-font-size: 1.5rem;
-$header-housing-font-size: 2.25rem;
-$tag-housing-font-size: 0.875rem;
-
-// Font-weight
-$error-font-weight: 700;
-$body-font-weight: 500;
-$list-dropdown-font-weight: 400;
-
-// Font
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-$body-font: 'Montserrat';

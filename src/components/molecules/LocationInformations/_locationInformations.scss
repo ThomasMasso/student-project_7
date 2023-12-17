@@ -7,8 +7,8 @@
 }
 
 .housing__informations-location h3 {
-    font-size: 36px;
-    color: #FF6060;
+    @include font(36px, 500);
+    color: $primary-color;
 
     @media screen and (max-width: 769px) {
         font-size: 18px;
@@ -16,8 +16,8 @@
 }
 
 .housing__informations-location p {
-    font-size: 18px;
-    color: #FF6060;
+    @include font(18px, 500);
+    color: $primary-color;
 
     @media screen and (max-width: 769px) {
         font-size: 14px;

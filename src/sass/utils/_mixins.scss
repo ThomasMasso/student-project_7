@@ -1,4 +1,8 @@
-@import '../utils/variables';
+@mixin font($size, $weight) {
+    font-size: ($size);
+    font-style: normal;
+    font-weight: $weight;
+}
 
 @mixin banner-background {
     background-size: cover;
@@ -17,7 +21,7 @@
 }
 
 @mixin underline {
-    text-decoration: underline $secondary-color;
+    text-decoration: underline $primary-color;
     text-underline-offset: 0.25rem;
     text-decoration-thickness: 0.05rem;
 }

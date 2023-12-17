@@ -1,4 +1,3 @@
-@import '../../../sass/utils/variables';
 @import '../../atoms/ErrorTitle/errorTitle.scss';
 @import '../../atoms/LinkReturnHome/linkReturnHome.scss';
 
@@ -6,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: $secondary-color;
+    color: $primary-color;
     margin-top: 40px;
 
     @media screen and (max-width: 769px) {
@@ -14,10 +13,11 @@
         margin: 15% auto 0 auto;
         width: 85%;
     }
+    
 }
 
 .error-page__paragraph {
-    font-size: 36px;
+    @include font(36px, 500);
     margin-bottom: 24%;
     text-align: center;
 

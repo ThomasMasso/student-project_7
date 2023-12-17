@@ -1,0 +1,88 @@
+@import '../../molecules/Slideshow/slideshow.scss';
+@import '../../atoms/Tag/tag.scss';
+@import '../../molecules/LocationInformations/locationInformations.scss';
+@import '../../organisms/AuthorInformations/authorInformations.scss';
+@import '../../atoms/CollapseContent/collapseContent.scss';
+
+.housing {
+    margin: 5% auto 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.housing__informations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 30px 0;
+
+    @media screen and (max-width: 769px) {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+.housing__dropdowns {
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+
+    @media screen and (max-width: 769px) {
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .collapse__card {
+        padding-bottom: 30px;
+        width: 100%;
+
+        @media screen and (max-width: 769px) {
+            padding-bottom: 20px;
+        }    
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $primary-color;
+            height: 52px;
+            padding: 0 10px;
+            border-radius: $border-radius-medium;
+
+            @media screen and (max-width: 769px) {
+                height: 30px;
+            }
+        }
+
+        .collapse__card-arrow-up {
+            padding-right: 20px;
+            cursor: pointer;
+
+            @media screen and (max-width: 769px) {
+                height: 8px;
+            }
+        }
+
+        .collapse__card-arrow-down {
+            padding-right: 20px;
+            cursor: pointer;
+
+            @media screen and (max-width: 769px) {
+                height: 8px;
+            }
+        }
+
+        .collapse__card-title {
+            padding-left: 10px;
+            @include font(24px, 500); 
+            color: $secondary-color;
+
+            @media screen and (max-width: 769px) {
+                font-size: 13px;
+            }
+        }
+    }
+}
+

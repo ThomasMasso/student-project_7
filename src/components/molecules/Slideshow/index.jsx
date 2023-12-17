@@ -33,7 +33,7 @@ export default function Slideshow({ pictures }) {
                         onClick={handlePrevClick}
                         src={ArrowPrevIcon}
                         alt="chevron vers la gauche"
-                        className="slideshow__arrow-prev"
+                        className="slideshow__arrow slideshow__arrow--prev"
                     />
                 )}
                 {pictures.length > 1 && (
@@ -41,7 +41,7 @@ export default function Slideshow({ pictures }) {
                         onClick={handleNextClick}
                         src={ArrowNextIcon}
                         alt="chevron vers la droite"
-                        className="slideshow__arrow-next"
+                        className="slideshow__arrow slideshow__arrow--next"
                     />
                 )}
 

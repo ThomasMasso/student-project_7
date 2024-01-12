@@ -25,14 +25,9 @@ Découpage en composants modulaires et réutilisables
 * La page 404 est renvoyée pour chaque route inexistante, ou si une valeur présente dans l’URL ne fait pas partie des données renseignées
 * La logique du routeur est réunie dans un seul fichier
 
-
-**Backend**
-
-Le dossier back permet de faire tourner l'api contenant les données des produits.
-
 **Installation**
 
-Il suffit de se positionner dans le dossier backend avec un terminal et de saisir la commande `yarn` et `yarn start`
+Il suffit de se positionner à la racine du projet avec un terminal et de saisir la commande `yarn` et `yarn start`
 
 **Compétences évaluées pour ce projet**
 * Configurer la navigation entre les pages de l'application avec React Router
